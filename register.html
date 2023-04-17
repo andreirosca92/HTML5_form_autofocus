@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <style>
+      html,
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        border: 0;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .container-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container-form {
+        padding: 20px;
+        background-color: rgba(189, 174, 174, 0.906);
+        border-radius: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+      }
+      form > input {
+        margin-bottom: 12px;
+        height: 100%;
+        width: 100%;
+      }
+      form > input[type="submit"] {
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        border: 1 solid rgb(21, 19, 19);
+        box-shadow: 5px 10px #888888;
+        padding: 8px 12px;
+      }
+      h1,
+      h2 {
+        justify-content: center;
+        color: rgb(21, 19, 19);
+      }
+      .container {
+        position: relative;
+        display: block;
+        gap: 20px;
+        background-color: #888888;
+      }
+      #login {
+        display: inline-block;
+        margin: 30px;
+        border: 1px solid black;
+        padding: 8px 10px;
+        background-color: rgb(236, 231, 240);
+        color: white;
+      }
+      #register {
+        display: inline-block;
+        margin: 30px;
+        border: 1px solid black;
+        padding: 8px 10px;
+        background-color: rgb(236, 231, 240);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="login">
+        <a href="./login.html">Login</a>
+      </p>
+      <p id="register">
+        <a href="./register.html">Sign-up</a>
+      </p>
+    </div>
+    <div class="container-box">
+      <h1>Esempio Pratico di autofocus html5</h1>
+      <div class="container-form">
+        <form action="/" method="get">
+          <h2>Sign-up</h2>
+          <label for="usernanme">Username</label>
+          <input type="text" name="username" id="username" autofocus required />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+          <input type="submit" value="Signup" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
